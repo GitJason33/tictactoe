@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/style.css"/>
+  <title>Tic-Tac-Toe</title>
+
+
+  <!-- import jQuery library -->
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    crossorigin
+  ></script>
+
+  <script src="/assets/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Tic-Tac-Toe</h1>
+
+    <div id="menu">
+      <button id="startBtn" onclick="startGame()" class="btn-menu">Start</button>
+      
+      <button id="newRound" onclick="newRound()" disabled class="btn-menu">Play again</button>
+    </div>
+
+    <div class="game-container">
+      <section id="scoreboard">
+        <table border="1" cellspacing="0">
+          <tr>
+            <td>Player X </ts>
+            <th id="player-x">0</th>
+          </tr>
+          
+          <tr>
+            <td>Player O </ts>
+            <th id="player-o">0</th>
+          </tr>
+          
+          <tr>
+            <td>Draws </ts>
+            <th id="draws">0</th>
+          </tr>
+          
+          <tr>
+            <td>Playing </ts>
+            <th id="turn">x</th>
+          </tr>
+    
+          <tr>
+            <td>Winner </ts>
+            <th id="winner">None</th>
+          </tr>
+        </table>
+      </section>
+      
+      <section id="box-wrapper">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </section>
+    </div>
+
+    <div id="countdown">
+      <h1></h1>
+    </div>
+  </main>
+</body>
+</html>
